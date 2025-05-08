@@ -47,5 +47,20 @@ The Online Auction System is a dynamic web application designed to facilitate on
 
 ---
 
-## Project Structure
+---
+
+## 🛠️ Setup Instructions
+
+### Prerequisites
+
+- **Node.js**: Version 14 or above.
+- **MongoDB**: Running instance for database access.
+
+### Steps
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/tapesh1134/Onile-Auction-System.git
+
 
