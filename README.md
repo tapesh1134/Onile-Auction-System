@@ -15,7 +15,6 @@ The Online Auction System is a dynamic web application designed to facilitate on
 ---
 
 ## Features
-
 - **User Registration & Authentication**: Secure login and signup functionality.
 - **Auction Management**:
   - Create, edit, and delete auctions.
@@ -24,11 +23,9 @@ The Online Auction System is a dynamic web application designed to facilitate on
 - **Notifications**: Alerts for bid updates and auction outcomes.
 - **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
 - **Admin Dashboard**: Admins can monitor auctions and users for moderation purposes.
-
 ---
 
 ## Technologies Used
-
 ### Frontend
 
 - **React**: For building dynamic user interfaces.
