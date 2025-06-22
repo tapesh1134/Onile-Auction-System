@@ -1,97 +1,42 @@
-import React from "react";
+import React from 'react';
 
 const About = () => {
-  const teamMembers = [
-    {
-      id: 1,
-      name: "Tapesh Sharma",
-      role: "Frontend And Backend Developer",
-      description:
-        "Tapesh is the all-rounder of our team. He contributed to both backend and frontend development, created the project schema, connected the two ends, and resolved bugs during the integration process. His holistic approach ensured the platform's smooth functionality.",
-      github: "https://github.com/tapesh1134",
-      image: "path/to/tapesh-profile-pic.jpg", // Replace with actual image path or URL
-    },
-    {
-      id: 2,
-      name: "Ankit Rai",
-      role: "Backend Developer",
-      description:
-        "Ankit is the architect of our backend. He built a robust and scalable backend system to handle the platform's core functionalities seamlessly.",
-      github: "https://github.com/anuj23awasthi",
-      image: "path/to/ankit-profile-pic.jpg", // Replace with actual image path or URL
-    },
-    {
-      id: 3,
-      name: "Abhishek",
-      role: "Frontend Developer",
-      description:
-        "Abhishek is our frontend expert. He focused on designing an intuitive and responsive user interface while also tackling any bugs that arose during development to ensure a smooth user experience.",
-      github: "https://github.com/anuj23awasthi",
-      image: "path/to/abhishek-profile-pic.jpg", // Replace with actual image path or URL
-    },
-    {
-      id: 4,
-      name: "Aditya",
-      role: "Frontend Developer",
-      description:
-        "Aditya contributed to the frontend development by working closely with Abhishek, providing valuable assistance in crafting a polished and engaging interface for users.",
-      github: "https://github.com/anuj23awasthi",
-      image: "path/to/aditya-profile-pic.jpg", // Replace with actual image path or URL
-    },
-    {
-      id: 5,
-      name: "Anuj Awasthi",
-      role: "Frontend Developer",
-      description:
-        "Anuj is the go-to person for collaboration and support. He assisted Aditya and Abhishek, ensuring smooth progress on the frontend development and debugging processes.",
-      github: "https://github.com/anuj23awasthi",
-      image: "path/to/anuj-profile-pic.jpg", // Replace with actual image path or URL
-    },
-  ];
-
   return (
-    <section className="w-full ml-0 m-0 h-fit px-5 pt-20 lg:pl-[320px] gap-7 flex flex-col min-h-screen py-4 justify-center">
-      <div>
-        <h1 className="text-[#42b9be] text-2xl font-bold mb-2 min-[480px]:text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl">
-          About Us
-        </h1>
-        <p className="text-xl text-stone-600">
-          Welcome to our Auction Platform! We are a passionate team of five
-          dynamic individuals who have come together to bring this project to
-          life. Our goal is to create a seamless and user-friendly platform that
-          simplifies the auction process for buyers and sellers alike.
-        </p>
-      </div>
-      <div>
-        <p className="text-xl text-stone-600">
-          <p>
-            <strong>Project GitHub:</strong> <a className="text-[#42b9be]" href="https://github.com/tapesh1134/Onile-Auction-System">github.com/tapesh1134/Onile-Auction-System</a>
-          </p>
-        </p>
-      </div>
-      {teamMembers.map((member) => (
-        <div key={member.id} className="flex items-center gap-4 mb-6">
-          <img
-            src={member.image}
-            alt={member.name}
-            className="w-16 h-16 rounded-full object-cover"
-          />
-          <div>
-            <h2 className="text-[#11111] font-bold mb-1">{member.name}</h2>
-            <p className="text-[#11111] font-bold mb-1">{member.role}</p>
-            <p>{member.description}</p>
-            <p>
-              <strong>GitHub:</strong>{" "}
-              <a className="text-[#42b9be]" href={member.github}>
-                {member.github}
-              </a>
-            </p>
-          </div>
-        </div>
-      ))}
-    </section>
+    <div className="max-w-4xl mx-auto p-6 text-gray-800">
+      <h1 className="text-3xl font-bold mb-4 text-center">About Us</h1>
+
+      <p className="text-lg mb-4">
+        Welcome to <span className="font-semibold text-blue-600">Auction Plateform</span> – your ultimate destination for secure and exciting online auctions.
+      </p>
+
+      <p className="mb-4">
+        At BidSphere, we empower individuals and businesses to buy and sell a wide range of items through real-time bidding. Whether you're looking to win collectibles, electronics, fashion items, or rare antiques, our platform ensures a fair and transparent auction process.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Our Mission</h2>
+      <p className="mb-4">
+        Our mission is to simplify the auction experience while providing a safe, user-friendly, and innovative platform for everyone. We strive to connect buyers and sellers globally and foster a community built on trust and opportunity.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Key Features</h2>
+      <ul className="list-disc list-inside space-y-2">
+        <li>Live, real-time bidding with instant updates</li>
+        <li>Secure user authentication and payment gateways</li>
+        <li>Seller dashboards for listing and tracking products</li>
+        <li>Transparent bidding history for all auctions</li>
+        <li>Mobile-friendly interface for on-the-go bidding</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Join Us</h2>
+      <p className="mb-4">
+        Whether you're here to find hidden gems or turn your products into profits, BidSphere is the place for you. Sign up today and start your auction journey with confidence.
+      </p>
+
+      <p className="mt-6 text-center text-sm text-gray-500">
+        &copy; {new Date().getFullYear()} BidSphere. All rights reserved.
+      </p>
+    </div>
   );
 };
-//Aaaaa
 
 export default About;
